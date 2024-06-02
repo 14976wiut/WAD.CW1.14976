@@ -1,7 +1,7 @@
 ﻿# WAD.CW1.14976
 # Web Application Development Project
 
-This application was developed for Web Application module as coursework portfolio project @ WIUT by student ID: [Your Student ID]
+This application was developed for Web Application module as coursework portfolio project @ WIUT by student ID: 00014976
 
 ## Project Overview
 
