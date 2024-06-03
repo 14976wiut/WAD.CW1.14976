@@ -23,7 +23,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore API 00014976", Version = "v1" });
 });
 
 var app = builder.Build();

@@ -40,7 +40,7 @@ namespace WAD.CW1._14976.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] AuthorDTO authorDTO)
+        public async Task<IActionResult> Create([FromBody] AuthorCreateDTO authorDTO)
         {
             var author = _mapper.Map<Author>(authorDTO);
             await _authorRepository.AddAsync(author);
@@ -48,7 +48,7 @@ namespace WAD.CW1._14976.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] AuthorDTO authorDTO)
+        public async Task<IActionResult> Update(int id, [FromBody] AuthorUpdateDTO authorDTO)
         {
             var author = await _authorRepository.GetByIdAsync(id);
             if (author == null)

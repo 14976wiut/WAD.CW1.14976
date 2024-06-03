@@ -16,6 +16,9 @@ namespace WAD.CW1._14976.Profiles
 
             CreateMap<AuthorDTO, Author>();
             CreateMap<BookDTO, Book>();
+
+            CreateMap<AuthorCreateDTO, Author>().ReverseMap();
+            CreateMap<AuthorUpdateDTO, Author>().ReverseMap();
         }
     }
 }
